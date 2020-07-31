@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="HTML, CSS & JS Quiz">
+    <meta name="description" content="Zodiac Quiz">
     <title>Quiz App</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
-      <div>
-        <h1>Zodiac Quiz</h1>    
+      <div class="row">
+          <h1>Zodiac Quiz</h1>    
+          <div class="question-and-score"></div>
       </div>
     </header>
 
-    <main>
-      <!--<fieldset>-->
-        <div>
-          <h2>Test your knowledge on the zodiac!</h2>
-            <p>This quiz is to analyze your basic knowledge of western and Chinese zodiac.
-            </p>
-          <div>
-            <button> Start Quiz</button>
-          </div>
-      <!--</fieldset>-->
+    <main role="main">
+      <fieldset>
+        <div class="row">
+            <legend>How much do you know about the zodiac?</legend>
+            <p>Test your knowledge on western and Chinese zodiac.</p>
+        </div>
+        <div class="row">
+            <button type="button" id="start"> Start Quiz</button>
+        </div>
+      </fieldset>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="store.js"></script>
