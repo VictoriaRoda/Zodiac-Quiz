@@ -41,7 +41,7 @@ function renderAQuestion() {
       <fieldset>
         <div class="question">
           <div class="row">
-            <legend> ${question.question}</legend>
+            <h2> ${question.question}</h2>
           </div>
         </div>
 
