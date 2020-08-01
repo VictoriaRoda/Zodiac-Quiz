@@ -71,7 +71,7 @@ function displayResults() {
       <form id="js-restart-quiz">
         <fieldset>
           <div class="row">
-            <legend>Your Score is: ${STORE.score}/${STORE.questions.length}</legend>
+            <p>Your Score is: ${STORE.score}/${STORE.questions.length}</p>
           </div>
           <div class="row">
             <button type="button" id="restart"> Restart Quiz </button>
