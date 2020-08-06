@@ -34,7 +34,15 @@ function updateOptions()
 function renderAQuestion() {
   let question = STORE.questions[STORE.currentQuestion];
   updateQuestionAndScore();
-  const questionHtml = $(`
+    $("main").html(questionHtml);
+  updateOptions();
+  $("#next-question").hide();
+}
+
+/*html for question*/
+function questionHtml() {
+  let question = STORE.questions[STORE.currentQuestion];
+  return`
   <div>
     <form id="js-questions" class="question-form">
       
@@ -58,10 +66,7 @@ function renderAQuestion() {
       </div>
     </fieldset>
     </form>
-  </div>`);
-$("main").html(questionHtml);
-updateOptions();
-$("#next-question").hide();
+  </div>`;
 }
 
 /* results and restart*/
