@@ -61,21 +61,35 @@ button {
 }
 
 .right-answer {
- color: #d62828;
+ color: #1a4301;
  padding: 10px 20px;
  margin: 0;
 }
 
 .wrong-answer {
-color: #d62828;
+color: #4f000b;
  padding: 10px 20px;
  margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  fieldset {
+    margin: 0px;
+  }
+    
 }
 
 @media only screen and (max-width: 600px) {
   fieldset {
     margin: 0px;
-
   }
+  .js-options {
+    margin-left: 30%;  
   
+  }  
+  button {
+    margin-left: 30%; 
+  }
 }
+
+
